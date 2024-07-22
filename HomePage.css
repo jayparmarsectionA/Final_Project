@@ -1,0 +1,73 @@
+body{
+    background-color: black;
+    background-image: url("https://i0.wp.com/prairiedeveloper.com/wp-content/uploads/2013/11/pieces-abstract-background-bubble-artik.png?fit=1920%2C1200&ssl=1");
+    background-size:cover;
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.485);
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+
+.navbar-custom {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    position:sticky;
+    top:0px;
+    z-index: 2;
+}
+
+.navbar-content {
+    width: 100%;
+    align-items:flex-end;
+    align-content: right;
+}
+
+.navbar-custom .nav-item .nav-link{
+    margin-right: 50px;
+}
+
+.form-control{
+    margin-right: 10px;
+}
+
+.section-divider {
+    border-top: 2px solid #dee2e6;
+    margin: 2rem 0;
+    width:100%;
+}
+
+.text-center{
+    margin-bottom: 30px;
+    color: #dee2e6;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.card-custom{
+    background-color: black;
+    z-index: 1;
+   
+}
+
+.card-custom:hover{
+    transform: scale(1.1);
+    border-radius: 5px;
+    border-color: aliceblue;
+}
+
+.footer {
+    background-color: rgba(11, 11, 11, 0.726);
+    color: white;
+    padding: 20px 0;
+}
+.footer .footer-links a {
+    color: #d3d3d3;
+    text-decoration: none;
+}
+.footer .footer-links a:hover {
+    color: white;
+    text-decoration: underline;
+}
