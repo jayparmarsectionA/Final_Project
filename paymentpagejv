@@ -1,0 +1,41 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('form');
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const cardholderName = document.getElementById('cardholder-name').value.trim();
+        const cardNumber = document.getElementById('card-number').value.trim();
+        const expiryDate = document.getElementById('expiry-date').value.trim();
+        const securityCode = document.getElementById('security-code').value.trim();
+        const postalCode = document.getElementById('postal-code').value.trim();
+
+        if (!cardholderName) {
+            alert('Cardholder Name is required');
+            return;
+        }
+
+        if (!cardNumber || !/^\d{16}$/.test(cardNumber)) {
+            alert('A valid 16-digit Credit Card Number is required');
+            return;
+        }
+
+        if (!expiryDate || !/^\d{4}$/.test(expiryDate)) {
+            alert('Expiry Date must be in MMYY format');
+            return;
+        }
+
+        if (!securityCode || !/^\d{3,4}$/.test(securityCode)) {
+            alert('A valid 3 or 4-digit Security Code is required');
+            return;
+        }
+
+        if (!postalCode) {
+            alert('ZIP/Postal Code is required');
+            return;
+        }
+
+        alert('Payment Submitted Successfully!');
+        form.reset();
+    });
+});

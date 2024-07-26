@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Payment</title>
+    <link rel="stylesheet" href="paymentpagestyle.css">
+</head>
+<body>
+        <header>
+            <h1>Tickets Payment</h1>
+            <div class="details">
+                <div class="date-time">
+                    <p>DATE<br>15 July, 2024</p>
+                    <p>TIME<br>9:30 PM</p>
+                </div>
+                <div class="location">
+                    <p>LOCATION<br>SilverCity Brampton Cinemas</p>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="payment-info">
+                <p><h3>Total Amount to be paid: CAD 31.65</p></h3>
+                <p><h3>Pay with Credit card or Debit</p></h3>
+            </div>
+            <div class="payment-form">
+                <form>
+                    <label for="cardholder-name">Cardholder Name</label>
+                    <input type="text" id="cardholder-name" name="cardholder-name">
+
+                    <label for="card-number">Credit Card Number</label>
+                    <input type="text" id="card-number" name="card-number">
+
+                    <label for="expiry-date">Expiry Date (MMYY)</label>
+                    <input type="text" id="expiry-date" name="expiry-date">
+
+                    <label for="security-code">Security Code</label>
+                    <input type="text" id="security-code" name="security-code">
+
+                    <p class="security-note">The 3-digit security code is located on the back of the credit card. For American Express cards, the 4-digit security code appears on the front of the credit card.</p>
+
+                    <label for="postal-code">ZIP/Postal Code</label>
+                    <input type="text" id="postal-code" name="postal-code">
+
+                    <button type="submit">PAY NOW</button>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="paymentpagejv"></script>
+</body>
+</html>

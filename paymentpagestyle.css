@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0c507d;
+    color: #fbf7f7;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.date-time, .location {
+    text-align: left;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.payment-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.payment-form {
+    max-width: 400px;
+    width: 100%;
+}
+
+.payment-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-form label {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.payment-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.payment-form .security-note {
+    font-size: 0.8em;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.payment-form button {
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.payment-form button:hover {
+    background-color: #555;
+}
