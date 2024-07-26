@@ -1,0 +1,129 @@
+body {
+    background-color: black;
+    background-image:url("https://i0.wp.com/prairiedeveloper.com/wp-content/uploads/2013/11/pieces-abstract-background-bubble-artik.png?fit=1920%2C1200&ssl=1");
+    background-size:cover;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; 
+    color: white; 
+}
+
+header {
+    background-color: #333; 
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar .logo h1 {
+    margin: 0;
+    color: white;
+}
+
+.navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar nav ul li {
+    display: inline;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.ticket-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.movie-poster img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.movie-info {
+    margin-left: 20px;
+    max-width: 300px;
+}
+
+.movie-info h2 {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+}
+
+.movie-info p {
+    margin: 5px 0;
+    color: white;
+}
+
+.selection label, .selection p {
+    margin: 10px 0;
+    color: white;
+}
+
+.selection select {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #333;
+    color: white;
+}
+
+button {
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #3700b3;
+}
+
+.watch-trailer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.watch-trailer a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.watch-trailer a:hover {
+    background-color: white;
+    color: #333;
+}
