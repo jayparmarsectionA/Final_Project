@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const movieCards = document.querySelectorAll('[data-genre]');
     const searchInput = document.getElementById('searchInput');
     const suggestionsContainer = document.getElementById('suggestions');
+    const searchButton = document.querySelector('.d-flex button');
+
 
     const movieNames = [
         "Touch",
@@ -65,6 +67,16 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         }
     });
+
+    searchButton.addEventListener('click', function (event) {
+        event.preventDefault();
+        const query = searchInput.value;
+        if (movieLinks[query]) {
+            window.location.href = movieLinks[query];
+        } else {
+            alert('Movie not found!');
+        }
+    });    
 
     function filterMovies(genre) {
         movieCards.forEach(card => {
