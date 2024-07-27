@@ -2,10 +2,6 @@ body {
     background-color: black;
     background-image:url("https://i0.wp.com/prairiedeveloper.com/wp-content/uploads/2013/11/pieces-abstract-background-bubble-artik.png?fit=1920%2C1200&ssl=1");
     background-size:cover;
-}
-
-
-body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -13,42 +9,55 @@ body {
     color: white; 
 }
 
-header {
-    background-color: #333; 
-    padding: 20px 0;
-    text-align: center;
-    color: white;
+header{
+    background-color: rgba(0, 0, 0, 0.485);
+    padding-bottom: 50px;
+    padding-top: 30px;
 }
 
-.navbar {
+.navbar-custom {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+    justify-content: center;
+    background-color: black;
+    position:sticky;
+    top:0px;
+    z-index: 2;
+    margin-bottom: 30px;
 }
 
-.navbar .logo h1 {
-    margin: 0;
-    color: white;
+.navbar-content {
+    width: 100%;
+    align-items:flex-end;
+    align-content: right;
 }
 
-.navbar nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
+.navbar-custom .nav-item .nav-link{
+    margin-right: 50px;
 }
 
-.navbar nav ul li {
-    display: inline;
+.suggestions {
+    border: 1px solid #ccc;
+    border-top: none;
+    max-height: 150px;
+    overflow-y: auto;
+    background-color: white;
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
 }
 
-.navbar nav ul li a {
-    text-decoration: none;
-    color: white;
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
 }
 
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+
+.form-control{
+    margin-right: 10px;
+}
 .ticket-section {
     display: flex;
     justify-content: center;

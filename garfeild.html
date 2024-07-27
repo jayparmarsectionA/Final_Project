@@ -5,22 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PVR Cinemas - Despicable Me 4</title>
     <link rel="stylesheet" href="phase2.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <div class="logo">
-                <h1>PVR Cinemas</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">Trending</a></li>
-                    <li><a href="#">Contact us</a></li>
-                </ul>
-            </nav>
-        </div>
+     <!-- Header -->
+     <header class="text-white text-center custom-header">
+        <h1>PVR Cinemas</h1>
     </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <div class="navbar-content">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="http://localhost:52330/HomePage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Our Locations</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Genre
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#" data-genre="all">All</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#" data-genre="action">Action</a></li>
+                            <li><a class="dropdown-item" href="#" data-genre="Horror">Horror</a></li>
+                            <li><a class="dropdown-item" href="#" data-genre="Animated">Animated</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Your Tickets</a>
+                    </li>
+                </ul>
+                <form class="d-flex position-relative">
+                    <input class="form-control me-2" id="searchInput" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <div id="suggestions" class="suggestions"></div>
+                </form>
+            </div>
+        </div>
+    </nav>
     <main>
         <section class="ticket-section">
             <div class="movie-poster">
@@ -62,7 +92,7 @@
                         <option value="imax">IMAX</option>
                     </select>
                 </div>
-                <button>Buy Your Ticket</button>
+                <a href="http://localhost:52330/paymentpage.html"><button>Buy Your Ticket</button></a>
             </div>
         </section>
     </main>
@@ -70,5 +100,13 @@
     <div class="watch-trailer">
     <a href="https://youtu.be/IeFWNtMo1Fs?si=Z6sAnRCdn03FVGWW">Watch trailer</a>
 </div>
+
+<script src="Homepage.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/container-query-polyfill@1/dist/container-query-polyfill.modern.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
