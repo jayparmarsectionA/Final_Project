@@ -42,13 +42,6 @@ document.addEventListener('DOMContentLoaded', function () {
          "Project Silence": "http://localhost:52330/projectsilence.html"
     }
 
-    genreLinks.forEach(link => {
-        link.addEventListener('click', function (event) {
-            event.preventDefault();
-            const genre = this.getAttribute('data-genre');
-            filterMovies(genre);
-        });
-    });
 
     searchInput.addEventListener('input', function () {
         const query = this.value.toLowerCase();
@@ -78,15 +71,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });    
 
-    function filterMovies(genre) {
-        movieCards.forEach(card => {
-            if (card.getAttribute('data-genre') === genre || genre === 'all') {
-                card.style.display = 'block';
-            } else {
-                card.style.display = 'none';
-            }
-        });
-    }
 });
 
 function showPopup() {
